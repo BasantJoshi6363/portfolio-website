@@ -4,7 +4,7 @@ import img from "../assets/img.png"
 
 const Middle = () => {
     return (
-        <div className='w-full flex flex-col lg:flex-row justify-center items-center gap-12 text-white mt-10'>
+        <div className='w-full flex  lg:flex-row justify-center items-center gap-12 text-white mt-10'>
             {/* Social icons */}
             <div className="left flex flex-col items-center gap-3">
                 <div className="socialhandle opacity-95 flex flex-col items-center gap-3">

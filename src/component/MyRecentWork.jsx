@@ -34,7 +34,7 @@ const MyRecentWork = () => {
             className="flex flex-col items-center justify-center p-6 w-full max-w-md bg-indigo-900 hover:border hover:border-purple-700 duration-300 rounded-3xl hover:bg-transparent transition-all"
           >
             <img
-              src={project.image}
+              // src={project.image}
               alt={project.title}
               className="rounded-lg mb-4"
             />
