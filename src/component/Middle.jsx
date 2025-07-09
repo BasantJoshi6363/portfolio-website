@@ -10,8 +10,8 @@ const Middle = () => {
                 <div className="socialhandle opacity-95 flex flex-col items-center gap-3">
                     <a className='text-[15px] hover:opacity-85' href="https://www.facebook.com/basant.joshi.710487/"><FaFacebook /></a>
                     <a className='text-[15px] hover:opacity-85' href="https://www.linkedin.com/in/basant-raj-joshi-887741313/"><FaLinkedin /></a>
-                    <a className='text-[15px] hover:opacity-85' href="https://www.linkedin.com/in/basant-joshi-995918369/"><FaGithub /></a>
-                    <a className='text-[15px] hover:opacity-85' href="https://www.tiktok.com/@basantjoshi8350"><FaTiktok /></a>
+                    <a className='text-[15px] hover:opacity-85' href="https://github.com/BasantJoshi6363"><FaGithub /></a>
+                    {/* <a className='text-[15px] hover:opacity-85' href="https://www.tiktok.com/@basantjoshi8350"><FaTiktok /></a> */}
                 </div>
                 <div className='h-10 w-[1px] bg-blue-800 mt-3'></div>
             </div>
