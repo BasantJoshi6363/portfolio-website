@@ -21,10 +21,10 @@ const CustomCursor = () => {
     }, []);
 
     return (
-        <div
-            ref={cursor}
-            className="absolute top-0 left-0 size-3 bg-white rounded-full border-none z-50  pointer-events-none"
-        ></div>
+    <div
+        ref={cursor}
+        className="absolute top-0 left-0 size-3 bg-white rounded-full border-none z-50 pointer-events-none hidden md:block"
+    ></div>
     );
 };
 
