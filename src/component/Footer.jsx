@@ -1,12 +1,16 @@
 import React from 'react'
-import { FaRegCopyright } from 'react-icons/fa'
+import { LuCopyright } from 'react-icons/lu'
 
 const Footer = () => {
-  return (
-    <footer className='mt-30 text-white'>
-        <h3 className='flex items-center gap-2 justify-center'>Copyright <FaRegCopyright /> by Basant Raj Joshi</h3>
-    </footer>
-  )
+    return (
+        <div className='w-full flex items-center  justify-center mt-5'>
+            <div className="last flex items-center gap-2">
+
+                <p className='text-white text-center mb-5 flex items-center gap-2'> <LuCopyright className='text-white' /> Basant Raj Joshi 2025</p>
+
+            </div>
+        </div>
+    )
 }
 
 export default Footer

@@ -1,35 +1,35 @@
-import React from 'react'
-import logo from "../assets/logo.png"
-import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci'
-import { AiFillGithub } from 'react-icons/ai'
+import React, { useRef } from 'react'
+import gsap from "gsap"
+import { useGSAP } from '@gsap/react'
 
 const Hero = () => {
-    return (
-        <div className="hero mt-10 flex justify-between items-center">
-            <div className="left">
-                <div className="social flex flex-col items-center gap-3 text-[#4DB4FE]">
-                    <a className='text-xl hover:text-white hover:transition-all' href="/"><CiLinkedin /></a>
-                    <a className='text-xl hover:text-white hover:transition-all' href="/"><CiFacebook /></a>
-                    <a className='text-xl hover:text-white hover:transition-all' href="/"><AiFillGithub /></a>
-                    <a className='text-xl hover:text-white hover:transition-all' href="/"><CiInstagram /></a>
-                    <div className="line w-[1px] h-10 bg-[#4DB4FE]"></div>
-                </div>
-            </div>
-            <div className="md:w-1/2 flex justify-center">
-                <div className="relative top-4 left-5 h-[300px] md:w-80 md:h-80">
-                    <div className="absolute size-[80%] rounded-full bg-blue-600 opacity-20 animate-pulse "></div>
-                    <img
-                        src={logo}
-                        alt="Developer"
-                        className="rounded-full size-[80%] object-cover border-4 border-blue-400"
-                    />
-                </div>
-            </div>
-            <div className="random text-[#4DB4FE] text-[12px] [writing-mode:vertical-rl] rotate-180 tracking-wider font-sans">
-                Scroll Down
-            </div>
-        </div>
-    )
-}
+  const heroRef = useRef();
 
-export default Hero
+  useGSAP(() => {
+    const elements = heroRef.current.children;
+
+    gsap.from(elements, {
+      opacity: 0,
+      y: 20,
+      stagger: 0.3, // delay between each animation
+      duration: 1,
+      ease: "power2.out"
+    });
+  }, []);
+
+  return (
+    <div
+      ref={heroRef}
+      className='flex gap-2 flex-col items-center text-center text-white pt-5 md:p-12'
+    >
+      <p className='opacity-70'>Hello I'm</p>
+      <h2 className='text-4xl font-bold '>Basant Raj Joshi</h2>
+      <h6 className='mt-2 opacity-70 text-[13px]'>Aspiring Fullstack Web Developer</h6>
+      <button className='w-[200px] bg-indigo-900 mt-3 rounded-md px-4 py-2 text-xl hover:opacity-70 cursor-pointer duration-200'>
+        <a href="#contact">Let's Talk</a>
+      </button>
+    </div>
+  );
+};
+
+export default Hero;

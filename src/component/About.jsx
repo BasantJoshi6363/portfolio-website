@@ -1,23 +1,27 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
     return (
-        <div id='about' className='mt-30  relative z-0'>
-            <div className="text-center">
-                <p className='uppercase'>get to know</p>
-                <h6 className='uppercase mt-3 text-2xl text-[#4DB4FE]'>About Me</h6>
+        <div className='mt-20 overflow-x-hidden w-full'>
+            <div className="upperabout text-center">
+                <h2 className="text-white text-2xl font-semibold mb-2">GET TO KNOW</h2>
+                <h1 className="text-blue-400 text-4xl font-bold mb-12">ABOUT ME</h1>
             </div>
-            <div className='flex flex-row mt-10'>
 
-                <div className=" flex-1 flex items-center flex-col justify-center">
-                    <p className='w-[80%] text-center'>Hi, I am Basant!
-                        I am a passionate IT professional and BCA student, skilled in HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I love building responsive projects like weather apps, chat apps, and CRUD applications. I’m dedicated to continuous learning and creating amazing user experiences.</p>
-                    <a href='#contact' className='bg-blue-600 px-4 py-3 mt-5 capitalize rounded-md hover:opacity-65 cursor-pointer'>let's talk</a>
+            <div className="aboutmecontainer w-full mt-10 flex flex-col items-center justify-center">
+                <p className='text-white text-center opacity-95 w-[80%] max-w-2xl'>
+                    I’m Basant, a passionate full-stack web developer skilled in React, Node.js, Express, and MongoDB, with a love for creating clean, responsive designs using Tailwind CSS. I enjoy building functional apps, exploring UI/UX design, and sharing knowledge through content creation. Always eager to learn and grow, I aim to blend technology, creativity, and user experience in everything I build.
+                </p>
 
-                </div>
+                <button 
+                    aria-label="Contact me"
+                    className='bg-indigo-900 mt-5 text-white rounded-md px-4 py-2 text-xl w-[200px] hover:opacity-70 cursor-pointer duration-200'
+                >
+                    <a href="#contact" className="block w-full h-full">Let's Talk</a>
+                </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default About
+export default About;

@@ -1,63 +1,63 @@
-import React from 'react';
+import React from 'react'
+import { MdVerified } from 'react-icons/md'
 
 const Experience = () => {
-  return (
-    <div className='mt-30'>
-      <div id='experience' className="text-center">
-        <p className='uppercase'>What Skills I Have</p>
-        <h6 className='uppercase mt-5 text-2xl text-[#4DB4FE]'>My Experience</h6>
-      </div>
-      <div className="boxes flex lg:justify-between lg:flex-row flex-col justify-center items-center gap-10 mt-12">
-        <div className="bg-[#262659] rounded-3xl p-8 w-1/2 text-center shadow-lg exp-box">
-          <h2 className="text-cyan-400 text-2xl font-semibold mb-6">Frontend Experience</h2>
-          <div className="flex justify-center text-white">
-            <div className='flex flex-col gap-2'>
-              <div className="flex gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">HTML</span>
-              </div>
-              <div className="flex items-center gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">CSS</span>
-              </div>
-              <div className="flex items-center gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">JavaScript</span>
-              </div>
-              <div className="flex items-center gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">React JS</span>
-              </div>
+    return (
+        <div className='mt-20 w-full text-white opacity-95 px-4'>
+            <div className="upperabout text-center">
+                <h2 className="text-white text-2xl font-semibold mb-2">What skills I have</h2>
+                <h1 className="text-blue-400 text-4xl font-bold mb-12">My Experience</h1>
             </div>
-          </div>
-        </div>
 
-        <div className="bg-[#262659] rounded-3xl p-8 w-1/2 text-center shadow-lg hover:bg-transparent hover:border-[.5px] exp-box">
-          <h2 className="text-cyan-400 text-2xl font-semibold mb-6">Backend Experience</h2>
-          <div className="flex justify-center text-white">
-            <div className='flex flex-col gap-2'>
-              <div className="flex gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">JavaScript</span>
-              </div>
-              <div className="flex items-center gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">Node JS</span>
-              </div>
-              <div className="flex items-center gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">Express JS</span>
-              </div>
-              <div className="flex items-center gap-2 mb-1">
-                <span>✔️</span>
-                <span className="font-semibold">MongoDB</span>
-              </div>
+            <div className="experienceContainer flex flex-col lg:flex-row justify-center items-center gap-10">
+                {/* Frontend Box */}
+                <div className="boxes flex flex-col items-center justify-center p-6 w-full max-w-md bg-indigo-900 hover:border hover:border-purple-700 duration-300 rounded-3xl hover:bg-transparent">
+                    <h5 className='font-semibold text-2xl mb-4'>Frontend Experience</h5>
+                    <ul className='flex flex-col gap-4'>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>HTML</h3>
+                        </li>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>CSS</h3>
+                        </li>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>JavaScript</h3>
+                        </li>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>React JS</h3>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Backend Box */}
+                <div className="boxes flex flex-col items-center justify-center p-6 w-full max-w-md bg-indigo-900 hover:border hover:border-purple-700 duration-300 rounded-3xl hover:bg-transparent">
+                    <h5 className='font-semibold text-2xl mb-4'>Backend Experience</h5>
+                    <ul className='flex flex-col gap-4'>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>Node JS</h3>
+                        </li>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>Express JS</h3>
+                        </li>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>MongoDB</h3>
+                        </li>
+                        <li className='flex items-center gap-3 text-lg sm:text-xl'>
+                            <MdVerified />
+                            <h3>SQL</h3>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
-export default Experience;
+export default Experience

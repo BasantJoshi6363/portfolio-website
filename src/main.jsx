@@ -2,13 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import CustomCursor from './CustomCursor.jsx'
-import Navbar from './component/Navbar.jsx'
-
+import AnimateComponent from './component/AnimateComponent.jsx'
+import { BrowserRouter } from 'react-router-dom'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Navbar />
-    <CustomCursor />
+    <BrowserRouter>
+    <AnimateComponent/>
     <App />
+    </BrowserRouter>
   </StrictMode>,
 )
