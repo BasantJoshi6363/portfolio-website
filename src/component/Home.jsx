@@ -29,20 +29,20 @@ const Home = () => {
       <AnimatedComponent>
         <Hero />
         <Middle />
-      </AnimatedComponent>
-      <AnimatedComponent>
         <About />
-      </AnimatedComponent>
-      <AnimatedComponent>
         <Experience />
-      </AnimatedComponent>
-      <AnimatedComponent>
         <MyRecentWork />
+        <Contact />
+        <Footer />
+      </AnimatedComponent>
+      {/* <AnimatedComponent>
       </AnimatedComponent>
       <AnimatedComponent>
-        <Contact />
       </AnimatedComponent>
-        <Footer />
+      <AnimatedComponent>
+      </AnimatedComponent>
+      <AnimatedComponent>
+      </AnimatedComponent> */}
     </div>
   )
 }
