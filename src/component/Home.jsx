@@ -31,11 +31,7 @@ const Home = () => {
       </AnimatedComponent>
       <Middle />
       <About />
-      <AnimatedComponent>
-        <Experience />
-      </AnimatedComponent>
-
-
+      <Experience />
       <MyRecentWork />
       <Contact />
       <Footer />
