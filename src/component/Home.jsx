@@ -23,26 +23,31 @@ const Home = () => {
   return (
     <div className='h-full  w-[100vw] flex items-center justify-center flex-col bg-[#1E1E38]'>
       {/* <Navigation/> */}
-      <SmoothScroll/>
+      <SmoothScroll />
       <MyComponent />
       <CustomCursor />
       <AnimatedComponent>
         <Hero />
+      </AnimatedComponent>
+      <AnimatedComponent>
         <Middle />
+      </AnimatedComponent>
+      <AnimatedComponent>
         <About />
+      </AnimatedComponent>
+      <AnimatedComponent>
         <Experience />
+      </AnimatedComponent>
+
+
+      <AnimatedComponent>
         <MyRecentWork />
+      </AnimatedComponent>
+      <AnimatedComponent>
         <Contact />
+      </AnimatedComponent>
         <Footer />
-      </AnimatedComponent>
-      {/* <AnimatedComponent>
-      </AnimatedComponent>
-      <AnimatedComponent>
-      </AnimatedComponent>
-      <AnimatedComponent>
-      </AnimatedComponent>
-      <AnimatedComponent>
-      </AnimatedComponent> */}
+
     </div>
   )
 }
