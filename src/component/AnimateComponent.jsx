@@ -18,7 +18,7 @@ const AnimatedComponent = ({ children }) => {
             {
               opacity: 1,
               y: 0,
-              duration: 2.5,
+              duration: 1.5,
               ease: "power3.out",
               scrollTrigger: {
                 trigger: ref.current,
