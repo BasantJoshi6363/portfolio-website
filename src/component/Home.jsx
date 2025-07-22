@@ -29,24 +29,16 @@ const Home = () => {
       <AnimatedComponent>
         <Hero />
       </AnimatedComponent>
-      <AnimatedComponent>
-        <Middle />
-      </AnimatedComponent>
-      <AnimatedComponent>
-        <About />
-      </AnimatedComponent>
+      <Middle />
+      <About />
       <AnimatedComponent>
         <Experience />
       </AnimatedComponent>
 
 
-      <AnimatedComponent>
-        <MyRecentWork />
-      </AnimatedComponent>
-      <AnimatedComponent>
-        <Contact />
-      </AnimatedComponent>
-        <Footer />
+      <MyRecentWork />
+      <Contact />
+      <Footer />
 
     </div>
   )
