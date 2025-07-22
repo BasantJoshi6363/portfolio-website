@@ -69,6 +69,17 @@ const AnimatedComponent = ({ children }) => {
 
     window.addEventListener("load", handleLoad);
 
+    // Additional iOS-specific fix: Use a timeout to ensure everything is loaded
+    const iOSFix = () => {
+      if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+        }, 1000);
+      }
+    };
+
+    iOSFix();
+
     return () => {
       ctx.revert(); // Cleanup animations
       window.removeEventListener("resize", refresh);
