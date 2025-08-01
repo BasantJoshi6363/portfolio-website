@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import eccomerce from "../assets/ecommerce.png";
+import blog from "../assets/blog.png"
 
 const projects = [
   {
-    title: 'Restaurant Website',
-    image: 'path_to_restaurant_image.png',
-    github: 'https://github.com/yourusername/restaurant-website',
+    title: 'MERN Blog Website',
+    image: blog,
+    github: 'https://github.com/BasantJoshi6363/mern-blog',
   },
   {
-    title: 'Fashion Website',
-    image: 'path_to_fashion_image.png',
-    github: 'https://github.com/yourusername/fashion-website',
+    title: 'Mern Eccomerce Website',
+    image: eccomerce,
+    github: 'https://github.com/BasantJoshi6363/college-mern-eccomerce',
   },
   {
     title: 'AnimeOwl Website',
@@ -34,7 +36,7 @@ const MyRecentWork = () => {
             className="flex flex-col items-center justify-center p-6 w-full max-w-md bg-indigo-900 hover:border hover:border-purple-700 duration-300 rounded-3xl hover:bg-transparent transition-all"
           >
             <img
-              // src={project.image}
+              src={project.image}
               alt={project.title}
               className="rounded-lg mb-4"
             />
