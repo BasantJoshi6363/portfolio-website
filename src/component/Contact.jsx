@@ -1,6 +1,8 @@
+import SmoothScroll from "./SmoothScroll";
+
 export default function Contact() {
   return (
-    <div id="contact" className="w-full py-12 px-4">
+    <div id="contact" onScroll={SmoothScroll} className="w-full py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-white text-2xl font-semibold text-center mb-2">GET IN TOUCH</h2>
         <h1 className="text-blue-400 text-4xl font-bold text-center mb-12">Contact</h1>
