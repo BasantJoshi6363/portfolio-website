@@ -6,7 +6,7 @@ export default function Contact() {
         <h1 className="text-blue-400 text-4xl font-bold text-center mb-12">Contact</h1>
 
         <form
-          action="https://formsubmit.co/basantjoshi6363@gmail.com"
+          action="71d2304295440c61e0a627c502a54ad7"
           method="POST"
           className="space-y-6"
         >
