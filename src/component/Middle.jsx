@@ -22,10 +22,10 @@ const Middle = () => {
             </div>
 
             {/* Scroll text */}
-            <div className="right flex flex-col items-center text-white opacity-95">
+            {/* <div className="right flex flex-col items-center text-white opacity-95">
                 <h5 className='rotate-90 whitespace-nowrap'>Scroll</h5>
                 <h5 className='rotate-90 whitespace-nowrap mt-5'>Down</h5>
-            </div>
+            </div> */}
         </div>
     )
 }
