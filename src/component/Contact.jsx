@@ -38,7 +38,7 @@ export default function Contact() {
 
           {/* Optional hidden fields */}
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="http://localhost:5173/thankyou" />
+          <input type="hidden" name="_next" value="http://basantjoshi.netlify.app/thankyou" />
 
           <button
             type="submit"
