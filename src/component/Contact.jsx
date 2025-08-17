@@ -1,16 +1,41 @@
+import { useState } from "react";
 import SmoothScroll from "./SmoothScroll";
 
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("https://formsubmit.co/71d2304295440c61e0a627c502a54ad7", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert("Your message has been submitted successfully!");
+        e.target.reset(); 
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("⚠ Error sending the message. Check your network.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div id="contact" onScroll={SmoothScroll} className="w-full py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-white text-2xl font-semibold text-center mb-2">GET IN TOUCH</h2>
         <h1 className="text-blue-400 text-4xl font-bold text-center mb-12">Contact</h1>
-        <form
-          action="https://formsubmit.co/71d2304295440c61e0a627c502a54ad7"
-          method="POST"
-          className="space-y-6"
-        >
+
+        <form onSubmit={handleSubmit} className="space-y-6">
           <input
             type="text"
             name="name"
@@ -35,18 +60,14 @@ export default function Contact() {
             className="w-full p-4 bg-transparent text-white border border-blue-400 rounded-md"
           ></textarea>
 
-          {/* Hidden fields */}
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://basantjoshi.netlify.app/thankyou" />
-
           <button
             type="submit"
             className="w-full bg-blue-400 hover:bg-blue-500 text-black font-semibold px-8 py-3 rounded-md"
+            disabled={isSubmitting}
           >
-            Submit
+            {isSubmitting ? "Sending..." : "Submit"}
           </button>
         </form>
-
       </div>
     </div>
   );
