@@ -7,10 +7,10 @@ const Middle = () => {
         <div className='w-full flex  lg:flex-row justify-center items-center gap-12 text-white mt-10'>
             {/* Social icons */}
             <div className="left flex flex-col items-center gap-3">
-                <div className="socialhandle opacity-95 flex flex-col items-center gap-3">
-                    <a className='text-[15px] hover:opacity-85' href="https://www.facebook.com/basant.joshi.710487/"><FaFacebook /></a>
-                    <a className='text-[15px] hover:opacity-85' href="https://www.linkedin.com/in/basant-joshi-995918369/"><FaLinkedin /></a>
-                    <a className='text-[15px] hover:opacity-85' href="https://github.com/BasantJoshi6363"><FaGithub /></a>
+                <div className="socialhandle opacity-95 flex flex-col items-center gap-5">
+                    <a className='lg:text-[20px] text-2xl   hover:opacity-85' href="https://www.facebook.com/basant.joshi.710487/"><FaFacebook /></a>
+                    <a className='lg:text-[20px] text-2xl  hover:opacity-85' href="https://www.linkedin.com/in/basant-joshi-995918369/"><FaLinkedin /></a>
+                    <a className='lg:text-[20px] text-2xl  hover:opacity-85' href="https://github.com/BasantJoshi6363"><FaGithub /></a>
                     {/* <a className='text-[15px] hover:opacity-85' href="https://www.tiktok.com/@basantjoshi8350"><FaTiktok /></a> */}
                 </div>
                 <div className='h-10 w-[1px] bg-blue-800 mt-3'></div>
