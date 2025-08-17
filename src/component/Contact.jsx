@@ -48,6 +48,7 @@ export default function Contact() {
             type="email"
             name="email"
             required
+            pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
             placeholder="Your Email"
             className="w-full p-4 bg-transparent text-white border border-blue-400 rounded-md"
           />
